@@ -2,396 +2,92 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-  <!-- <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"> -->
-  <title>Explore My Journey</title>
+  <title>Kunal_Gunjal</title>
 </head>
 
-<body style="background-color: black;">
-  <br>
-  <h1 style="color: #fff; margin: top 10%; text-align: center;">Explore My Journey</h1> <br>
-  <div class="text-center">
-    <a class="btn btn-outline-light btn-floating me-2" href="resume.html" role="button">RESUME</a>
-    <a class="btn btn-outline-light btn-floating me-2" href="#!" role="button">BLOGS</a>
-  </div>
-
-  <strong>
-    <hr>
-  </strong>
+<body style="background-color:rgb(17, 16, 16);">
   <style>
-    .zoom {
-      background-color: rgb(255, 255, 255);
-      color: rgb(0, 0, 0);
+    #navbar {
+      overflow: hidden;
+      background-color: rgb(7, 7, 7);
     }
 
-    .zoom:hover {
-      transition-duration: 2s;
-      transform: scale(1.03);
-      background-color: rgb(100, 100, 100);
-      color: rgb(255, 255, 255);
+    body {
+      background-color: black;
     }
 
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-
-    .skill-bars {
-      padding: 30px 20px;
-      width: 100%;
-      background: #fff;
-      box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
-      border-radius: 10px;
-    }
-
-    .skill-bars .bar {
-      margin: 20px 10px;
-    }
-
-    .skill-bars .bar:first-child {
-      margin-top: 0px;
-    }
-
-    .skill-bars .bar .info {
-      margin-bottom: 5px;
-    }
-
-    .skill-bars .bar .info span {
-      font-weight: 500;
-      font-size: 17px;
-      opacity: 0;
-      animation: showText 0.5s 1s linear forwards;
-    }
-
-    @keyframes showText {
-      100% {
-        opacity: 1;
-      }
-    }
-
-    .skill-bars .bar .progress-line {
-      height: 10px;
-      width: 100%;
-      background: #f0f0f0;
+    .ml5 {
       position: relative;
-      transform: scaleX(0);
-      transform-origin: left;
-      border-radius: 10px;
-      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05),
-        0 1px rgba(255, 255, 255, 0.8);
-      animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+      font-weight: 400;
+      font-size: 5.5em;
+      color: #fcfdfd;
     }
 
-    @keyframes animate {
-      100% {
-        transform: scaleX(1);
-      }
+    .ml5 .text-wrapper {
+      position: relative;
+      display: inline-block;
+      padding-top: 0.1em;
+      padding-right: 0.05em;
+      padding-bottom: 0.15em;
+      line-height: 1em;
     }
 
-    .bar .progress-line span {
-      height: 100%;
+    .ml5 .line {
       position: absolute;
-      border-radius: 10px;
-      transform: scaleX(0);
-      transform-origin: left;
-      background: #6665ee;
-      animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      height: 3px;
+      width: 100%;
+      background-color: #faf9f9;
+      transform-origin: 0.5 0;
     }
 
-    .bar .progress-line.html span {
-      width: 90%;
-    }
+    
+     
 
-    .bar .progress-line.css span {
-      width: 60%;
-    }
-
-    .bar .progress-line.jquery span {
-      width: 85%;
-    }
-
-    .bar .progress-line.python span {
-      width: 50%;
-    }
-
-    .bar .progress-line.mysql span {
-      width: 75%;
-    }
-
-    .progress-line span::before {
-      position: absolute;
-      content: "";
-      top: -10px;
-      right: 0;
-      height: 0;
-      width: 0;
-      border: 7px solid transparent;
-      border-bottom-width: 0px;
-      border-right-width: 0px;
-      border-top-color: #000;
+    .ml5 .letters {
+      display: inline-block;
       opacity: 0;
-      animation: showText2 0.5s 1.5s linear forwards;
-    }
-
-    .progress-line span::after {
-      position: absolute;
-      top: -28px;
-      right: 0;
-      font-weight: 500;
-      background: #000;
-      color: #fff;
-      padding: 1px 8px;
-      font-size: 12px;
-      border-radius: 3px;
-      opacity: 0;
-      animation: showText2 0.5s 1.5s linear forwards;
-    }
-
-    @keyframes showText2 {
-      100% {
-        opacity: 1;
-      }
-    }
-
-    .progress-line.html span::after {
-      content: "90%";
-    }
-
-    .progress-line.css span::after {
-      content: "70%";
-    }
-
-    .progress-line.jquery span::after {
-      content: "85%";
-    }
-
-    .progress-line.python span::after {
-      content: "60%";
-    }
-
-    .progress-line.mysql span::after {
-      content: "75%";
     }
   </style>
 
+  <br><br><br><br>
+  <center>
+    <h1 class="ml5">
+      <span class="text-wrapper">
+        <!-- <span class="line line1"></span> -->
+        <span class="letters letters-left">KUNAL</span>
 
-  <div class="container">
-    <div id="page-3" class="page three">
-      <h2 style="color: aqua;">Skills</h2><br>
-      <div class="container">
+        <span class="letters letters-right">GUNJAL</span>
+        <!-- <span class="line line2"></span> -->
+      </span>
+    </h1>
 
-        <div class="skill-bars">
-          <div class="bar">
-            <div class="info">
-              <span>C ++</span>
-            </div>
-            <div class="progress-line html">
-              <span></span>
-            </div>
-          </div>
-          <div class="bar">
-            <div class="info">
-              <span>ReactJs</span>
-            </div>
-            <div class="progress-line css">
-              <span></span>
-            </div>
-          </div>
-          <div class="bar">
-            <div class="info">
-              <span>Javascript</span>
-            </div>
-            <div class="progress-line jquery">
-              <span></span>
-            </div>
-          </div>
-          <div class="bar">
-            <div class="info">
-              <span>Java</span>
-            </div>
-            <div class="progress-line python">
-              <span></span>
-            </div>
-          </div>
-          <div class="bar">
-            <div class="info">
-              <span>MySQl</span>
-            </div>
-            <div class="progress-line mysql">
-              <span></span>
-            </div>
-          </div>
-        </div>
-
-      </div>
+    <h2 style="color: rgb(250, 246, 246);"> WEB DEVELOPER & UX/UI Designer</h2>
+    <h3 style="color: rgb(252, 248, 248);">PUNE , INDIA</h3>
+    <br><br>
+    <div class="container">
+      <a class="btn btn-outline-light btn-floating m-1" href="explore.html" role="button">Explore</a>
     </div>
-  </div>
-  <br><br>
+  </center>
 
-  <div class="container">
-    <div class="row">
-      <h2 style="color: aqua;">Projects</h2><br><br><br>
+  <br><br><br><br><br><br><br>
+  <hr>
 
-      <div class="col-sm-12 col-md-4 zoom  ">
-        <div class="card-header">
-          <h4 class="my-3 font-weight-normal">Working on </h4>
-          <h4 class="my-3 font-weight-normal"> Public Website</h4>
-          <h2 class="my-3 font-weight-normal"><u>FlatForYou.in</u></h2>
-        </div>
-        <div class="card-body">
-          <img
-            src="https://cdni.iconscout.com/illustration/premium/thumb/people-working-together-to-build-new-house-2706715-2270675.png"
-            height="200px" width="100%">
-          <div class="box">
-            <br>
-            <strong>
-              <p>
-                We are suggest to deploy one module. We are used HTML/CSS/JS. Using MySQL we are
-                designed our Database.Using this project , we are removing Brokerage system for flats
-                and most important a person who looking for flat/roommate they can search from their
-                homes via mobiles.
-              </p>
-            </strong>
-          </div>
-
-          <br><br>
-
-        </div>
-      </div>
-      <br>
-      <div class="col-sm-12 col-md-4 zoom  ">
-        <div class="card-header">
-
-          <h4 class="my-3 font-weight-normal">Third Year Mini Project</h4>
-          <h2 class="my-3 font-weight-normal"><u>Credit Card Fraud </u></h2>
-          <h2 class="my-3 font-weight-normal"><u> Analysis using ML</u></h2>
-        </div>
-        <div class="card-body">
-
-          <img src="https://ai-journey.com/wp-content/uploads/2019/06/fraud-EMV-chip-credit-card.jpg" height="200px"
-            width="100%">
-          <div class="box">
-            <br>
-            <strong>
-              <p>
-                Reason behind to deploy this project is , to identify whether a new transaction is
-                fraudulent or not using PYTHON. Our aim here is to detect 100% of the fraudulent
-                transactions while minimizing the incorrect classifications from .csv file (Given input
-                dataset)
-              </p>
-            </strong>
-          </div>
-
-          <br><br><br>
-
-        </div>
-      </div>
-
-      <br>
-      <div class="col-sm-12 col-md-4 zoom  ">
-        <div class="card-header">
-          <h4 class=" font-weight-normal">Public Website</h4>
-          <h2 class="my-3 font-weight-normal"><u>Project Management System</u></h2>
-        </div>
-        <div class="card-body">
-          <img
-            src="https://www.elegantthemes.com/blog/wp-content/uploads/2020/06/best-project-management-platforms-featured-image-scaled.jpg"
-            height="200px" width="100%">
-          <div class="box">
-            <br>
-            <strong>
-              <p>
-                We are suggest to deploy one module. We are used HTML/CSS/JS/Bootstrap for front-end.
-                Using this module we are making Project Management System.
-
-              </p>
-            </strong>
-          </div>
-          <br><br>
-        </div>
-      </div>
-    </div>
-  </div><br>
-  <div class="container">
-    <h2 style="color: aqua;">Experience</h2><br>
-    <div class="row">
-      <div class="col-lg-12 ">
-        <div class="card">
-          <div class="card-body ">
-            <div class="hori-timeline" dir="ltr ">
-              <ul class="list-inline events">
-                <li class="list-inline-item event-list">
-                  <div class="px-4">
-                    <div class="event-date bg-soft-primary text-primary">January'21 - Till</div>
-                    <h3 class="font-size-16">Project Management System</h3>
-                    <p class="text-muted">Its a public website project..I worked here as a front end
-                      developer. In this project i learn lot of things like collaborating with
-                      different different frameworks like Bootstrap , Materialized CSS and
-                      Javascript.</p>
-                    <div>
-
-                    </div>
-                  </div>
-                </li>
-                <li class="list-inline-item event-list">
-                  <div class="px-4">
-                    <div class="event-date bg-soft-primary text-primary">February'21 - Till</div>
-                    <h3 class="font-size-16">Campus Ambassador Program</h3>
-                    <h6 class="font-size-16">(By National Engineering Olympiad , India)</h6>
-                    <p class="text-muted">An event is organized by National Engineering Olympiad ,
-                      India .</p>
-                    <div>
-
-                    </div>
-                  </div>
-                </li>
-                <li class="list-inline-item event-list">
-                  <div class="px-4">
-                    <div class="event-date bg-soft-primary text-primary">September'20 - November'20
-                    </div>
-                    <h3 class="font-size-16">Campus Ambassador Program</h3>
-                    <h6 class="font-size-16">(By Indian Institute Of Management , Bangalore)</h6>
-                    <p class="text-muted">An event was organized by IIM Bangalore Vista'20. It's a
-                      platform where i showed my communication , collaborative skills. And i
-                      awardes by Silver Insignia. Very glad to perform at IIM Bangalore</p>
-                    <div>
-
-                    </div>
-                  </div>
-                </li>
-
-                <li class="list-inline-item event-list">
-                  <div class="px-4">
-                    <div class="event-date bg-soft-primary text-primary">September'20 - October'20
-                    </div>
-                    <h3 class="font-size-16">Working with NGO</h3>
-                    <h6 class="font-size-16">(By Youth Empowerment Foundation , India)</h6>
-                    <p class="text-muted">Its an initiative for social welfare by the year of 2015.
-                      Our team visited slums for the counselling , more than 100 childrens/youth
-                      enrolled in free education that provided by us.. </p>
-                    <div>
-
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-
-  <br>
-
-
-  <!-- Footer -->
-  <footer class="bg-dark text-center text-white ">
+  <hr><br>
+  <footer class="bg-dark text-center text-white">
     <br>
     <strong>Follow Me On...</strong>
     <!-- Grid container -->
@@ -418,34 +114,63 @@
         <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/kunal-gunjal-3a23431ab/"
           role="button"><i class="fab fa-github"></i></a>
       </section>
-
-
       <section class="mb-4">
         <p style="font-size: large;">
           Thank You Very Much...! Keep Supporting
         </p>
       </section>
     </div>
-    <!-- Grid container -->
-
-    <!-- Copyright -->
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
       © 2021 Copyright: Kunal Gunjal
-
     </div>
-    <!-- Copyright -->
   </footer>
-
-
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
     crossorigin="anonymous"></script>
-
-  <!-- <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script> -->
-  <!-- <script src="//code.jquery.com/jquery-1.11.1.min.js"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  <script>
+    anime.timeline({ loop: true })
+      .add({
+        targets: '.ml5 .line',
+        opacity: [0.5, 1],
+        scaleX: [0, 1],
+        easing: "easeInOutExpo",
+        duration: 700
+      }).add({
+        targets: '.ml5 .line',
+        duration: 600,
+        easing: "easeOutExpo",
+        translateY: (el, i) => (-0.625 + 0.625 * 2 * i) + "em"
+      }).add({
+        targets: '.ml5 .ampersand',
+        opacity: [0, 1],
+        scaleY: [0.5, 1],
+        easing: "easeOutExpo",
+        duration: 600,
+        offset: '-=600'
+      }).add({
+        targets: '.ml5 .letters-left',
+        opacity: [0, 1],
+        translateX: ["0.5em", 0],
+        easing: "easeOutExpo",
+        duration: 600,
+        offset: '-=300'
+      }).add({
+        targets: '.ml5 .letters-right',
+        opacity: [0, 1],
+        translateX: ["-0.5em", 0],
+        easing: "easeOutExpo",
+        duration: 600,
+        offset: '-=600'
+      }).add({
+        targets: '.ml5',
+        opacity: 0,
+        duration: 1000,
+        easing: "easeOutExpo",
+        delay: 1000
+      });
 
+  </script>
 </body>
 
 </html>
