@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+#backimg{
+    width: 100%;
+    margin: 0;
+    background-size: cover;
+    background-image: url(bg2.jpg);
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
+    color:white;
+    background-attachment: fixed;
+    display: flex;
+}
+
+
+
+.details{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+    padding: 40px;
+margin-left: 15%;
+width: 50%;
+}
+
+.details p {
+font-size: 30px;
+}
+.details ol {
+font-size: 25px;
+}
+
+
+.photo{
+    /* height: 300px;
+    width: 300px; */
+    padding-top: 10%;        
+
+}
+
+.two{
+    height: 250px;
+    width: 250px;
+    
+    border: solid white 3px;
+    border-radius: 3px;
+}
+
+.xyz{
+    
+    display:grid;
+    padding: 10px;
+    cursor: pointer;    
+}
+
+.xyz p{
+    font-size: 25px;
+}
+
+
+.xyz button{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 15px;
+    width: 130px;
+    height: 30px;
+
+    /* there commands works in button */
+    /* padding: 10px;
+    margin: 10%; */
+}
+
+.help p{
+    font-size: 25px;
+}
